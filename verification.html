@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Identity</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            transition: all 0.5s ease-in-out;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            background-color: #4CAF50;
+            color: white;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        .message {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hii! Let me verify first that you are Prachi.</h1>
+        <p> Is ldki ke ghar ka kya naam hai (5 words only) :) </p>
+        <input type="text" id="nickname" placeholder="Enter your nickname">
+        <button onclick="verify()">Submit</button>
+        <p id="message" class="message"></p>
+    </div>
+
+    <script>
+        function verify() {
+            let nickname = document.getElementById("nickname").value.trim().toLowerCase();
+            if (nickname === "chinu") { 
+                document.getElementById("message").innerHTML = "✅ Correct! Welcome, Prachi!";
+                setTimeout(() => {
+                    window.location.href = "intro.html"; // Redirect to the next page
+                }, 2000);
+            } else {
+                document.getElementById("message").innerHTML = "❌ Oops! Try again.";
+            }
+        }
+    </script>
+
+</body>
+</html>

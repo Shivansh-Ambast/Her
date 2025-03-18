@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Theme Message</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #8B0000, #FF0000);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            color: white;
+        }
+        .paper {
+            background: white;
+            width: 80%;
+            max-width: 600px;
+            min-height: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.5);
+            text-align: left;
+            font-size: 20px;
+            color: black;
+            font-family: 'Georgia', serif;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        .next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .next-button:hover {
+            background-color: #B22222;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1> The Teacher's day Tale</h1>
+    <div class="paper">
+        <p id="customMessage">
+            On 5th September when our school was organising Teacher's Day. Idk how but we both got in a same colour outfit. That was the first day when we had a pic with each other but this time I was not excited as much as I used to be with her. We talked with each other but it never felt like it was a genuine talk It seemed like we are just replying to each other and hating at the same time. ( A pure Red Carpet :) )
+        </p>
+    </div>
+    <button class="next-button" onclick="goToNextPage()">Next ➡️</button>
+
+    <script>
+        function goToNextPage() {
+            window.location.href = "message6.html"; // Change this to your next page's filename
+        }
+    </script>
+
+</body>
+</html>
