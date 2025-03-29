@@ -62,7 +62,7 @@
 
     <div class="container">
         <h1>Hii! Let me verify first that you are Prachi.</h1>
-        <p> Is ldki ke ghar ka kya naam hai (5 words only) :) </p>
+        <p> Bulls were stupid for chasing ________ ?? :) </p>
         <input type="text" id="nickname" placeholder="Enter your nickname">
         <button onclick="verify()">Submit</button>
         <p id="message" class="message"></p>
@@ -71,7 +71,7 @@
     <script>
         function verify() {
             let nickname = document.getElementById("nickname").value.trim().toLowerCase();
-            if (nickname === "chinu") { 
+            if (nickname === "Red Flags") { 
                 document.getElementById("message").innerHTML = "✅ Correct! Welcome, Prachi!";
                 setTimeout(() => {
                     window.location.href = "intro.html"; // Redirect to the next page
