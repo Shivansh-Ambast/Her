@@ -71,15 +71,9 @@
     <script>
         function verify() {
             let nickname = document.getElementById("nickname").value.trim().toLowerCase();
-            if (nickname === "RedFlags") { 
+            if (nickname === "RedFlag") { 
                 document.getElementById("message").innerHTML = "✅ Correct! Welcome, Prachi!";
-                setTimeout(() => {
-                    window.location.href = "intro.html"; // Redirect to the next page
-                }, 2000);
-            } else {
-                document.getElementById("message").innerHTML = "❌ Oops! Try again.";
             }
-        }
     </script>
 
 </body>
