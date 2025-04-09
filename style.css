@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e000a8;
+  margin: 0; /* Remove default margin to avoid unintended horizontal scroll */
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+h1 {
+  color: #ff83d3;
+  font-size: 2rem;
+  text-align: center;
+}
+
+div {
+  background-color: #ff83d3;
+  color: #e000a8;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ff62ef;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 32, 222, 0.332);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+form input,
+form button {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 2rem;
+  padding: 1rem;
+}
