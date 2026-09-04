@@ -3,37 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> I M DONE </title>
+    <title>Welcome Prachi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            transition: all 0.5s ease-in-out;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no {
+            background-color: #f44336;
+            color: white;
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+        #message {
+            display: none;
+            font-size: 22px;
+            font-weight: bold;
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
-    
-    <h1> <b> Sorry but... </b> </h1>
-    <div >
-        <h2><strong>I CANT HANDLE THIS ANYMORE </strong></h2>
-        <p> <b> ✨Well,
-             I thought everything is OK but now I cant handle this anymore. I cant force anyone to talk to me. so I am cutting off myself now✨</b>
-            </p>
+
+    <div class="container" id="welcome">
+        <h1>Hi,Blob here.  Are you Prachi?</h1>
+        <button class="yes" onclick="goToNextPage()">Yes</button>
+        <button class="no" onclick="showSorryMessage()">No</button>
     </div>
-    <div>
-        <p><b>Hope you will have a better and bright future. No grudges against you its my fault than I always expected a lot from you</b></p>
-    </div>
-   
-    <div>
-        <h2><strong>I guess its cuz of love</strong></h2>
-        <p><b>Well I will not deny with the fact that I was in love with you that time and thats why I did that website and letter thing. but now  no more ehsaan on you.</b></p>
-    </div>
-   
-    <div>
-        <img src="\WhatsApp Image 2025-04-08 at 22.03.12_7efecdf5.jpg" width ="290" height="200" alt="Image 1 ">
-    </div>
-    <div>
-        <p><b>I cant handle to hurt myself anymore so GOODBYE</b>.</p>
-    </div>
-    >
-    <footer>
-        <p> &copy; 2025 Shivansh Ambast. All rights reserved.</p>
-      </footer>
-      
+
+    <div id="message">😢 Sorry, this is only for Prachi.</div>
+
+    <script>
+        function goToNextPage() {
+            document.body.style.background = "linear-gradient(135deg, #a18cd1, #fbc2eb)";
+            document.getElementById("welcome").innerHTML = "<h1>Welcome, Prachi! 🎉</h1><p>Click below to continue.</p><button class='yes' onclick='nextPage()'>Continue</button>";
+        }
+
+        function showSorryMessage() {
+            document.getElementById("welcome").style.display = "none";
+            document.getElementById("message").style.display = "block";
+        }
+
+        function nextPage() {
+            window.location.href = "verification.html"; // Replace with your actual next page
+        }
+    </script>
+
 </body>
 </html>
